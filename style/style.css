@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #122a57;
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+header {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 10rem;
+}
+.order-1 {
+    order: 1;
+}
+.order-2 {
+    order: 2;
+}
+.order-3 {
+    order: 3;
+}
+.wrapper {
+    max-width: 100rem;
+    height: 100%;
+    padding-inline: 3rem;
+    margin-inline: auto;
+}
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.button {
+    display: block;
+    padding: 1.2rem 4.6rem;
+    background-color: var(--primary-color);
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    color: #fff;
+    border-radius: 3rem;
+    text-align: center;
+}
+.button-2 {
+    display: block;
+    padding: 1.2rem 4.6rem;
+    background-color: #fff;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    color: var(--primary-color);
+    border-radius: 2rem;
+    text-align: center;
+}
+/*=================TITLE=================*/
+#header-container h1 {
+    font-size: 3.6rem;
+    line-height: 2.8rem;
+    font-weight: 700;
+    color: #fff;
+}
+/*=================NAVIGATION=================*/
+#navigation {
+    display: block;
+    margin-right: 4rem;
+}
+#navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#navigation ul li a {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.8rem;
+    padding: 1rem 1rem;
+    color: #fff;
+}
+#navigation ul li a:hover {
+    background-color: var(--primary-color);
+}
+/*=================FIRST CONTAINER?=================*/
+#first-container {
+    margin-top: 8.4rem;
+}
+#first-container h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6.4rem;
+    line-height: 7.5rem;
+    color: var(--primary-color);
+}
+#first-container p {
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    margin-block: 1.7rem 4.4rem;
+}
+#first-container img {
+    max-width: 100%;
+}
+/*=================ABOUT CONTAINER=================*/
+#about {
+    margin-top: 8.4rem;
+}
+
+#about h2 {
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    margin-top: 12rem;
+}
+#about h2::before {
+    content: "|";
+    width: 0.2rem;
+    margin-right: 1rem;
+}
+#about p {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+.about-img img{
+    width: 100%;
+}
+/*=================SERVICES CONTAINER=================*/
+#services {
+    width: 100%;
+    background-color: var(--primary-color);
+    height: auto;
+    margin-top: 8rem;
+    padding-bottom: 7rem;
+}
+.services-title h2 {
+    display: block;
+    font-weight: 700;
+    font-size: 4.8rem;
+    color: #fff;
+    height: 100%;
+    padding-block: 7.5rem 10.6rem;
+    margin-inline: 2rem;
+}
+.services-item img {
+    max-width: 22rem;
+}
+.services-item p {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    color: #fff;
+    margin-block: 4.2rem;
+}
+/*=================PLANS CONTAINER=================*/
+#plans {
+    margin-bottom: 21.7rem;
+}
+#plans h2 {
+    margin-block: 10.4rem 0;
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+}
+#plans .flex-container {
+    align-items: flex-end;
+    gap: 3rem;
+}
+.plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.5rem solid var(--primary-color);
+}
+.plan h3 {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: var(--primary-color);
+    margin-block: 4.7rem 1.5rem;
+    text-align: center;
+}
+.plan h3::after{
+    width: 100%;
+    height: .2rem;
+    content: "";
+    background-color: var(--primary-color);
+    margin-block: 2rem 2rem
+}
+.plan ul{
+    list-style: square;
+}
+.plan ul li {
+    line-height: 3.1rem;
+}
+.plan a {
+    margin-block: 4.7rem 1.5rem;
+    margin-inline: 3rem;
+}
+/*=================FOOTER=================*/
+footer {
+    width: 100%;
+    background-color: var(--primary-color);
+    height: 11.1rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+}
